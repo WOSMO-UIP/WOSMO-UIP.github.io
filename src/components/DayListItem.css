@@ -1,18 +1,4 @@
-.list-group-item {
-    border: none;
-}
 
-.list-group-item .btn {
-    font-weight: bold;
-}
-
-.list-group-item .btn i {
-    margin-left: 0.25rem;
-}
-
-.list-group-item .sub-items {
-    margin-bottom: 0;
-}
 
 .list-group-item .sub-items .list-group-item {
     border: none;
@@ -25,43 +11,14 @@
     color: #6b7280;
 }
 
-.list-group-item .sub-items .list-group-item .form-check {
-    margin-left: auto;
-}
 
-.list-group-item .sub-items .list-group-item .form-check-input:checked+.form-check-label::before {
-    content: "\f046";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #4caf50;
-}
 
-.list-group-item .sub-items .list-group-item .form-check-label {
-    font-size: 0.875rem;
-}
 
-.list-group-item .sub-items .list-group-item .form-check-label:hover {
-    text-decoration: underline;
-}
 
-.form-control:focus {
-    outline: none;
-    box-shadow: none;
-    border-color: #4f46e5;
-}
 
-.form-control::placeholder {
-    color: #a3a3a3;
-}
 
-.btn-outline-success:hover {
-    color: #fff;
-    background-color: #4caf50;
-    border-color: #4caf50;
-}
 
-.btn-outline-danger:hover {
-    color: #fff;
-    background-color: #e53e3e;
-    border-color: #e53e3e;
-}
+
+
+
+  
