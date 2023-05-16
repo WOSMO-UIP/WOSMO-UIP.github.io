@@ -10,14 +10,16 @@ const createData = (title, items, type) => ({
 const data = [
 
 
-    createData("Day 1: Day 1: Getting started", [
+    createData("Day 1:  Getting started", [
         "Write a 'Hello, World!' program",
         "Understanding modules in Rust and their usage",
     ], "feature"),
-    createData("Day 2: Functions and Modules in Rust", [
-        "Creating and calling functions in Rust",
-        "Understanding modules in Rust and their usage",
-    ], "feature"),
+    // createData("Day 2: Functions and Modules in Rust", [
+    //     "Creating and calling functions in Rust",
+    //     "Understanding modules in Rust and their usage",
+    // ], "feature"    
+    
+    // ),
 
     // createData("Day 3: Ownership and Borrowing in Rust", [
     //     "Introduction to Rust’s ownership model and memory safety",

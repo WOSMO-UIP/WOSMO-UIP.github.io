@@ -1,23 +1,17 @@
-
-
-
-
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import DayListItem from './DayListItem';
-import data from '../data';
+import data from './data';
 
 function DayList() {
   const [cards, setCards] = useState(data);
 
   const handleAddCardClick = () => {
     const newCard = {
-      title: "New Day",
-      doneText: "Done",
-      notDoneText: "Not Done",
+      title: prompt("Enter title:"),
       items: [],
       type: "feature",
-      checkboxText: "Completed"
+      checkboxText: "completed"
     };
     setCards([...cards, newCard]);
   };
@@ -51,21 +45,21 @@ function DayList() {
   };
 
   return (
-    <div className="min-h-screen">
-      <div className="mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-end">
+    <div className="min-h-screen ">
+      <div className="mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-end  ">
         <div className="flex">
           <motion.button
             onClick={handleAddCardClick}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2"
+            className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded mr-2"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Add Card
+            New Card
           </motion.button>
           {cards.length > 0 && (
             <motion.button
               onClick={() => handleCardDelete(cards.length - 1)}
-              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+              className="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -74,10 +68,10 @@ function DayList() {
           )}
         </div>
       </div>
-      <div className="mx-auto py-6 sm:px-6 lg:px-8">
-        <AnimatePresence>
+      <div className="mx-auto py-6 sm:px-6 lg:px-8 ">
+        <AnimatePresence >
           <motion.div
-            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2 "
             variants={containerVariants}
             initial="hidden"
             animate="show"
@@ -87,13 +81,14 @@ function DayList() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white shadow overflow-hidden sm:rounded-lg"
+                className="bg-white shadow overflow-hidden sm:rounded-lg "
               >
                 <DayListItem
                   index={index}
                   {...card}
                   onUpdate={handleCardUpdate}
                   onDelete={() => handleCardDelete(index)}
+                  // className="bg-black"
                 />
               </motion.div>
             ))}

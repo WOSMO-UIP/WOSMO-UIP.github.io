@@ -2,8 +2,8 @@
  body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgb(204, 130, 204), rgb(193, 188, 245));
-  color: #bb4dbb;
+  background: linear-gradient(45deg,rgb(2, 4, 26),rgb(1, 1, 117));
+  color: aqua;
   display: flex;
   flex-direction: row;
   justify-content: center;
